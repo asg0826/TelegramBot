@@ -1,5 +1,5 @@
 # TelegramBot
-TelegramBot for telemetry
+TelegramBot with Java. It sends information that gets from a socket and send it through telegram. 
 
 Dependency for Maven 
 
