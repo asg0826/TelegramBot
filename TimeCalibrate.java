@@ -2,12 +2,12 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class TimeUpdate {
+public class TimeCalibrate {
 	
 	//Instances
 	Timer timer;
 	//Constructor
-	public TimeUpdate(Long start, Long seconds) {
+	public TimeCalibrate(Long start, Long seconds) {
 		
 		Timer timer = new Timer(); 
 		this.timer=timer;
@@ -34,7 +34,7 @@ public class TimeUpdate {
         	
 			try {
 				
-				darrow.update();
+				darrow.updateCalibrate();
 				
 			} catch (IOException e) {
 			
