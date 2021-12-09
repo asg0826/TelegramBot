@@ -8,15 +8,13 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class Main {
 	public static void main(String[] args) throws IOException {
 
-    	
-    	
-
         try {
         
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);    
             Darrow darrow = new Darrow();
             botsApi.registerBot(darrow);
             darrow.startMainTask();
+            
                       
         } catch (TelegramApiException e) {
             e.printStackTrace();
