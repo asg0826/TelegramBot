@@ -1,3 +1,5 @@
+package org.telegram;
+
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -6,14 +8,14 @@ public class TimeUpdate {
 	
 	//Instances
 	Timer timer;
-	
 	//Constructor
 	public TimeUpdate(Long start, Long seconds) {
+		
 		Timer timer = new Timer(); 
 		this.timer=timer;
 		timer.schedule(new timerTask(), 0, seconds);
-    	
-	 	
+		
+    
 	}
 	
 	public void Stop() {
@@ -23,8 +25,13 @@ public class TimeUpdate {
 	
 	
     class timerTask extends TimerTask {
-        public void run() {
-        	
+    	
+    	
+    	
+    	
+        @Override
+		public void run() {
+        	      	
         	Darrow darrow = new Darrow();
         	
 			try {
