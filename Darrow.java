@@ -151,7 +151,7 @@ public class Darrow extends TelegramLongPollingBot {
 	
 	public void sendMsg(String msg) throws IOException {
 		
-		//long channel=-1001574111334L ;
+		//long channel=-10015741113L ;
 		    long channel=-1001758498434L ;
        		SendMessage message = new SendMessage(); // Create a SendMessage object with mandatory fields
      	    message.setChatId(Long.toString(channel));
@@ -361,6 +361,6 @@ public class Darrow extends TelegramLongPollingBot {
 	
     public String getBotToken() {
     
-       	 return "2110806264:AAGpaoaocSAetvSle6m5STQcKaD1CmSHXI8";
+       	 return "2110806264:AAGpaoaocSAetvSle6m5STQcKaD1CmSH";
     }
 }
